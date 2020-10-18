@@ -14,7 +14,89 @@
         <header class="header">
             <div class="header__nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-item">
+                    <li class="header__nav-item header__nav-item-hidden__pc">
+                        <label for="header__nav-input" class="nav__tablet-icon">
+                            <svg style="width: 16px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                                class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                                </path>
+                            </svg>
+                        </label>
+
+                        <input hidden type="checkbox" name="" id="header__nav-input" class="header__nav-input-checked">
+
+                        <label for="header__nav-input" class="nav__overlay"></label>
+
+                        <nav class="header__nav-mobile">
+                            <p class="header__nav-mobile-img">
+                                <img style="width: 100px;" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="">
+                            </p>
+                            <ul class="header__nav-mobile-list">
+                                <li class="header__nav-mobile-item">
+                                    <a href="" class="header__nav-mobile-item__link">
+                                        <i class="header__nav-mobile-item__link-icon fas fa-home"></i>
+                                        <span class="header__nav-mobile-item__desc">Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="" class="header__nav-mobile-item__link">
+                                        <i class="header__nav-mobile-item__link-icon fas fa-history"></i>
+                                        <span class="header__nav-mobile-item__desc">Hoạt động tìm kiếm</span>
+                                    </a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="" class="header__nav-mobile-item__link">
+                                        <i class="header__nav-mobile-item__link-icon fas fa-copy"></i>
+                                        <span class="header__nav-mobile-item__desc">Bộ sưu tập</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__nav-mobile-list">
+                                <li class="header__nav-mobile-item">
+                                    <a href="" class="header__nav-mobile-item__link">
+                                        <i class="header__nav-mobile-item__link-icon fas fa-cog"></i>
+                                        <span class="header__nav-mobile-item__desc">Cài đặt</span>
+                                    </a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="" class="header__nav-mobile-item__link">
+                                        <i class="header__nav-mobile-item__link-icon fas fa-user-shield"></i>
+                                        <span class="header__nav-mobile-item__desc">Dữ liệu của bạn trong Tìm kiếm</span>
+                                    </a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="" class="header__nav-mobile-item__link">
+                                        <i class="header__nav-mobile-item__link-icon fas fa-eye-slash"></i>
+                                        <span class="header__nav-mobile-item__desc">Ẩn kết quả phản cảm: đang tắt</span>
+                                    </a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="" class="header__nav-mobile-item__link">
+                                        <i class="header__nav-mobile-item__link-icon fas fa-search-dollar"></i>
+                                        <span class="header__nav-mobile-item__desc">Cách hoạt động của tìm kiếm</span>
+                                    </a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="" class="header__nav-mobile-item__link">
+                                        <i class="header__nav-mobile-item__link-icon fas fa-question-circle"></i>
+                                        <span class="header__nav-mobile-item__desc">Trợ giúp</span>
+                                    </a>
+                                </li>
+                                <li class="header__nav-mobile-item">
+                                    <a href="" class="header__nav-mobile-item__link">
+                                        <i class="header__nav-mobile-item__link-icon far fa-paper-plane"></i>
+                                        <span class="header__nav-mobile-item__desc">Gửi phản hồi</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="header__nav-item header__nav-item-hidden__pc">
+                        <a href="" class="header__nav-item-link header__nav-item-link__focus">Tất cả</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item-hidden__mobile">
                         <a href="" class="header__nav-item-link">Gmail</a>
                     </li>
                     <li class="header__nav-item">
@@ -23,14 +105,28 @@
 
                     <!-- apps google -->
                     <li class="header__nav-item header__nav-item__icon">
-                        <a href="javascript:;" class="header__nav-item-link abc">
+                        <!-- <a href="javascript:;" class="header__nav-item-link abc">
                             <svg style="width: 20px" aria-hidden="true" focusable="false" data-prefix="far" data-icon="th" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-th fa-w-16 fa-lg">
                                 <path fill="currentColor"
                                     d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM197.3 72h117.3v96H197.3zm0 136h117.3v96H197.3zm-40 232H52c-6.6 0-12-5.4-12-12v-84h117.3zm0-136H40v-96h117.3zm0-136H40V84c0-6.6 5.4-12 12-12h105.3zm157.4 272H197.3v-96h117.3v96zm157.3 0H354.7v-96H472zm0-136H354.7v-96H472zm0-136H354.7V72H472z"
                                     class="">
                                 </path>
                             </svg>
-                        </a>
+                        </a> -->
+
+                        <label for="header__nav-option-input" class="header__nav-item-link abc">
+                            <svg style="width: 20px" aria-hidden="true" focusable="false" data-prefix="far" data-icon="th" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-th fa-w-16 fa-lg">
+                                <path fill="currentColor"
+                                    d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM197.3 72h117.3v96H197.3zm0 136h117.3v96H197.3zm-40 232H52c-6.6 0-12-5.4-12-12v-84h117.3zm0-136H40v-96h117.3zm0-136H40V84c0-6.6 5.4-12 12-12h105.3zm157.4 272H197.3v-96h117.3v96zm157.3 0H354.7v-96H472zm0-136H354.7v-96H472zm0-136H354.7V72H472z"
+                                    class="">
+                                </path>
+                            </svg>
+                        </label>
+
+                        <input hidden type="checkbox" name="" id="header__nav-option-input" class="header__nav-option-checked">
+
+                        <label for="header__nav-option-input" class="header__nav-option-input-overlay"></label>
+
                         <div class="header__nav-option">
                             <ul class="header__nav-option-list">
                                 <li class="header__nav-option-item">
@@ -273,7 +369,8 @@
                         <a href="" class="footer__desc-item-link">Quảng cáo</a>
                         <a href="" class="footer__desc-item-link">Doanh nghiệp</a>
                         <a href="" class="footer__desc-item-link">Giới thiệu</a>
-                        <a href="" class="footer__desc-item-link">Cách hoạt động của Tìm kiếm</a>
+                        <a href="" class="footer__desc-item-link footer__desc-item-link_mobile">Cách hoạt động của Tìm
+                            kiếm</a>
                     </li>
                 </ul>
                 <ul class="footer__desc-securty">
